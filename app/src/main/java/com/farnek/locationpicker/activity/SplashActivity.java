@@ -1,14 +1,14 @@
 package com.farnek.locationpicker.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.farnek.locationpicker.R;
-import com.farnek.locationpicker.model.UserData;
+import com.farnek.locationpicker.model.LoginResponse.UserDetails;
 import com.farnek.locationpicker.utility.AppConstants;
 import com.google.gson.Gson;
 
@@ -29,13 +29,13 @@ public class SplashActivity extends AppCompatActivity {
                 SharedPreferences sharedPreference = getApplicationContext().getSharedPreferences(AppConstants.SHARED_PREF_USER, 0);
                 Gson gson = new Gson();
                 String json = sharedPreference.getString(AppConstants.USER, "");
-                UserData userData = gson.fromJson(json, UserData.class);
+                UserDetails userData = gson.fromJson(json, UserDetails.class);
                 if (userData != null) {
                     Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
 //                    intent.putExtras(bundle);
                     startActivity(intent);
                 } else {
-                    startActivity(new Intent(SplashActivity.this, HomeActivity.class));
+                    startActivity(new Intent(SplashActivity.this, LoginActivity.class));
                 }
                 finish();
             }

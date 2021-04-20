@@ -15,10 +15,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class JsonServiceHandler {
 
-    private static final String BASE_URL = "https://alfabee.pk/Services/";
+    private static final String BASE_URL = "https://interview.farnek.com/shafeek/webservice/Services/";
     public static final String RELATIVE_URL_LOGIN = "login";
-    public static final String RELATIVE_URL_UPDATE_LIVE_LOCATION = "update_rider_live_location";
-
+    public static final String RELATIVE_URL_UPDATE_LOCATION = "update_location";
+    public static final String RELATIVE_URL_LOCATION_HISTORY = "date_location";
     //Retrofit
     private static HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
     // set your desired log level
@@ -41,8 +41,6 @@ public class JsonServiceHandler {
                 Request original = chain.request();
                 Request request = original.newBuilder()
                         .header("Content-Type", "application/json")
-                        .header("User-Agents", "com.alfabee.com")
-                        .header("Authtoken", "Alwafaa123")
                         .method(original.method(), original.body())
                         .build();
                 return chain.proceed(request);

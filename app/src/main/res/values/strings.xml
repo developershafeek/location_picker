@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">LocationPicker</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCsbuL9rHORCS8Z_5ONgATVgckbNedeb7M</string>
+    <string name="location_history">Location History</string>
+    <string name="No_location_history_found">No location history found</string>
+    <string name="date">Date</string>
+    <string name="Login">Login</string>
+    <string name="Name">Name</string>
+    <string name="Alert">Alert</string>
+    <string name="Your_Device_Location_is_OFF">Your Device Location is OFF.Go To Settings,Turn it ON</string>
+    <string name="Settings">Settings</string>
+    <string name="Logout">Logout</string>
+    <string name="Are_you_sure_want_to_logout">Are you sure want to logout?</string>
+    <string name="Home">Home</string>
+    <string name="Location_History">Location History</string>
+    <string name="No">No</string>
+    <string name="Yes">Yes</string>
+
 </resources>

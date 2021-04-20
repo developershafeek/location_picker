@@ -1,14 +1,11 @@
 package com.farnek.locationpicker.utility;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.provider.Settings;
 import android.text.TextUtils;
-
-import static android.content.Context.MODE_PRIVATE;
 
 public class utility {
     // Check network connection

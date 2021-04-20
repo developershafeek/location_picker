@@ -16,10 +16,9 @@ tools:context=".activity.LoginActivity">
     android:padding="20dp">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_40"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center"
         android:background="@drawable/app_logo"/>
 
     <TextView
@@ -28,7 +27,8 @@ tools:context=".activity.LoginActivity">
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:text="Login"
+        android:text="@string/Login"
+        android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="25sp" />
 
@@ -37,7 +37,7 @@ tools:context=".activity.LoginActivity">
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name"
+        android:hint="@string/Name"
         app:boxStrokeColor="@color/colorPrimary">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -45,7 +45,7 @@ tools:context=".activity.LoginActivity">
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:lines="1"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -65,21 +65,22 @@ tools:context=".activity.LoginActivity">
         android:padding="10dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:text="Login"
+        android:text="@string/Login"
+        android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp" />
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/colorPrimary" />
 </LinearLayout>
-
-<com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/spin_kit"
-    style="@style/SpinKitView.Large.Circle"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:layout_gravity="center"
-    android:visibility="gone"
-    app:SpinKit_Color="@color/colorPrimary" />
 
 
 </RelativeLayout>

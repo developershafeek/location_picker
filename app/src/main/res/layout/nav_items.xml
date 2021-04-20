@@ -40,7 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingLeft="@dimen/dp_10"
-                    android:text="Home"
+                    android:text="@string/Home"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_17" />
 
@@ -72,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingLeft="@dimen/dp_10"
-                    android:text="Location History"
+                    android:text="@string/Location_History"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_17" />
 
@@ -105,7 +105,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:paddingLeft="@dimen/dp_10"
-                    android:text="Logout"
+                    android:text="@string/Logout"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_17" />
 
