@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LocationPicker</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCsbuL9rHORCS8Z_5ONgATVgckbNedeb7M</string>
+</resources>
